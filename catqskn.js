@@ -7,10 +7,10 @@ let sum=0;
 for(let i=0;i<nbrs.length;i++){
     sum+=parseInt(nbrs[i]);}
     res.send({sum});
-})
+});
 app.get('/multiplication', (req,res)=>{const nbrs=req.query.nbrs;
     let product=1;
     for(let i=0;i<nbrs.length;i++){
         product*=parseInt(nbrs[i]);}
         res.send({product});
-    })
+    });
